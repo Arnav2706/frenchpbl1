@@ -1,0 +1,101 @@
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #eaeef3;
+        color: #333;
+        line-height: 1.6;
+    }
+    header {
+        background: linear-gradient(to right, #1f4037, #99f2c8);
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    nav {
+        background: #444;
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+        background: #555;
+        transform: scale(1.1);
+    }
+    .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        animation: slideUp 1s ease-out;
+    }
+    @keyframes slideUp {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .container h2 {
+        background: #1f4037;
+        color: white;
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+    .container p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .container ul {
+        list-style-type: none;
+        padding: 1rem;
+    }
+    .container ul li {
+        padding: 0.5rem 0;
+    }
+    .container ul li a {
+        color: #1f4037;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    .container ul li a:hover {
+        color: #99f2c8;
+    }
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background: #1f4037;
+        color: white;
+        margin-top: 2rem;
+    }
+</style>
